@@ -6,7 +6,7 @@ public class Principal  {
 
     public static void main(String args[]) {
         try {
-            Socket servidor = new Socket("10.149.130.21", 4444);//endereco e porta
+            Socket servidor = new Socket("localhost", 4444);//endereco e porta
             PrintWriter out = new PrintWriter(servidor.getOutputStream(), true);
 //Executa uma Thread para receber as mensagens de retorno
             Cliente in = new Cliente(servidor);
